@@ -1,0 +1,42 @@
+* C:\Users\Adojang\Desktop\E344\LTSpice\E344_Assessment1.asc
+V2 N005 N004 PWL file=PWLinput.csv
+V3 Stimulus N005 SINE({sineOffset} {sineAmplitude} {sineFreq})
+V1 N004 0 {dcAmplitude}
+V4 N006 0 9
+R_Sense 9V N006 0.010
+R1 NC_01 N002 100
+R2 N002 Stimulus 5
+R3 0 N002 5
+XU1 N001 0 9V 0 N003 0 LM2595_ADJ_TRANS
+C2 0 9V 220µ
+L1 Vout N003 100µ
+C1 Vout 0 120µ
+D1 0 N003 DN5822
+R4 N001 0 1k
+R5 Vout N001 3065
+C3 Vout N001 3.3n
+C4 N007 0 0.33µ
+C5 N008 0 0.1µ
+XU2 N008 0 N007 LM7805
+R6 N008 0 785
+R7 Vout 0 100
+.model D D
+.lib C:\Users\Adojang\Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 0 {transtop} 0 {timestep}
+.include E344cfg.txt
+* Don't change these -- used for auto-assessments.\nYou may modify input files while developing.\nFor submission: \n  * Use only 9V supply \n  * Connect "Stimulus" to your input\n  * Connect "Vout" to your output.\n  * Only one label name per net.
+* Config file:
+* Analysis setup:
+* Battery
+* Sensor-\nemulating \nstimulus
+* Assessed nets:\nConnect to your outputs
+* E. Stewdent.,  00024601\nV(0degV) = 500 mV\ndeltaV/degV = 10 mV
+.incl LM2595_ADJ_TRANS.LIB
+.incl LM7805.lib
+.incl TLC2272.lib
+.incl TL081.lib
+.incl 1N5822.lib
+.lib C:\Users\Adojang\Desktop\E344\LTSpice\LM2595_ADJ_TRANS.LIB
+.lib C:\Users\Adojang\Desktop\E344\LTSpice\LM7805.lib
+.backanno
+.end
