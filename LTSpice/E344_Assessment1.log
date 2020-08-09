@@ -6,27 +6,222 @@ Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}}|v
     Error: undefined symbol in: "if([v](a)>((vthresh))|v(b)>((vthresh))|v(c)>((vthresh)),((vdd)),((vss)))"
 Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}},{{vdd}},{{vss}})}"
     Error: undefined symbol in: "if([v](a)>((vthresh)),((vdd)),((vss)))"
+WARNING: Less than two connections to node STIMULUS.  This node is used by V3.
 WARNING: Less than two connections to node NC_01.  This node is used by R1.
-Direct Newton iteration for .op point succeeded.
-Ignoring empty pin current: Ix(u1:fb)
-Ignoring empty pin current: Ix(u1:fb)
-Heightened Def Con from 0.00586505 to 0.00586505
+WARNING: Less than two connections to node N003.  This node is used by R2.
+WARNING: Less than two connections to node NC_02.  This node is used by RCURRENTIN.
+WARNING: Less than two connections to node NC_03.  This node is used by RCURRENTOUT1.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 0.00100083
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195313
+Gmin = 0.00100083
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
 
-Date: Fri Aug 07 11:47:33 2020
-Total elapsed time: 37.809 seconds.
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 5.35038%
+vernier = 0.00390625
+Source Step = 5.32966%
+Source Step = 5.35926%
+Source Step = 5.38885%
+Source Step = 5.41844%
+Source Step = 5.44804%
+vernier = 0.00146484
+Source Step = 5.48503%
+Source Step = 5.52942%
+Source Step = 5.5738%
+Source Step = 5.61819%
+Source Step = 5.66258%
+vernier = 0.00219727
+Source Step = 5.71585%
+Source Step = 5.78243%
+Source Step = 5.84902%
+Source Step = 5.9156%
+Source Step = 5.98219%
+vernier = 0.0032959
+Source Step = 6.05876%
+Source Step = 6.15863%
+Source Step = 6.25851%
+Source Step = 6.35838%
+Source Step = 6.45826%
+vernier = 0.00494385
+Source Step = 6.56812%
+Source Step = 6.71794%
+Source Step = 6.86775%
+Source Step = 7.01756%
+Source Step = 7.16738%
+vernier = 0.00741577
+Source Step = 7.32468%
+Source Step = 7.5494%
+Source Step = 7.77412%
+Source Step = 7.99884%
+Source Step = 8.22356%
+Source Step = 8.44828%
+vernier = 0.0111237
+Source Step = 8.78536%
+Source Step = 9.12244%
+Source Step = 9.45952%
+Source Step = 9.7966%
+Source Step = 10.1337%
+vernier = 0.0166855
+Source Step = 10.6225%
+Source Step = 11.1281%
+Source Step = 11.6337%
+Source Step = 12.1393%
+Source Step = 12.6449%
+vernier = 0.0250282
+Source Step = 13.3528%
+Source Step = 14.1112%
+Source Step = 14.8697%
+Source Step = 15.6281%
+Source Step = 16.3865%
+vernier = 0.0375423
+Source Step = 17.4104%
+Source Step = 18.5481%
+Source Step = 19.6857%
+Source Step = 20.8234%
+Source Step = 21.961%
+vernier = 0.0563135
+Source Step = 23.4399%
+Source Step = 25.1464%
+Source Step = 26.8529%
+Source Step = 28.5593%
+Source Step = 30.2658%
+vernier = 0.0844703
+Source Step = 32.3989%
+Source Step = 34.9586%
+Source Step = 37.5183%
+Source Step = 40.078%
+Source Step = 42.6377%
+vernier = 0.126705
+Source Step = 45.7094%
+Source Step = 49.5489%
+Source Step = 53.3885%
+Source Step = 57.228%
+Source Step = 61.0676%
+vernier = 0.190058
+Source Step = 65.4831%
+Source Step = 71.2424%
+Source Step = 77.0018%
+Source Step = 82.7611%
+Source Step = 88.5204%
+Source Step = 90.2842%
+Source Step = 90.3742%
+Source Step = 90.4642%
+Source Step = 90.5542%
+Source Step = 90.6442%
+Source Step = 90.7342%
+Source Step = 90.8242%
+Source Step = 90.9142%
+Source Step = 91.0042%
+Source Step = 91.0941%
+Source Step = 91.1841%
+Source Step = 91.2741%
+Source Step = 91.3641%
+Source Step = 91.4541%
+Source Step = 91.5441%
+Source Step = 91.6341%
+Source Step = 91.7241%
+Source Step = 91.8141%
+Source Step = 91.9041%
+Source Step = 91.994%
+Source Step = 92.084%
+Source Step = 92.174%
+Source Step = 92.264%
+Source Step = 92.354%
+Source Step = 92.444%
+Source Step = 92.534%
+Source Step = 92.624%
+Source Step = 92.714%
+Source Step = 92.804%
+Source Step = 92.8939%
+Source Step = 92.9839%
+Source Step = 93.0739%
+Source Step = 93.1639%
+Source Step = 93.2539%
+Source Step = 93.3439%
+Source Step = 93.4339%
+Source Step = 93.5239%
+Source Step = 93.6139%
+Source Step = 93.7038%
+Source Step = 93.7938%
+Source Step = 93.8838%
+Source Step = 93.9738%
+Source Step = 94.0638%
+Source Step = 94.1538%
+Source Step = 94.2438%
+Source Step = 94.3338%
+Source Step = 94.4238%
+Source Step = 94.5138%
+Source Step = 94.6037%
+Source Step = 94.6937%
+Source Step = 94.7837%
+Source Step = 94.8737%
+Source Step = 94.9637%
+Source Step = 95.0537%
+Source Step = 95.1437%
+Source Step = 95.2337%
+Source Step = 95.3237%
+Source Step = 95.4137%
+Source Step = 95.5036%
+Source Step = 95.5936%
+Source Step = 95.6836%
+Source Step = 95.7736%
+Source Step = 95.8636%
+Source Step = 95.9536%
+Source Step = 96.0436%
+Source Step = 96.1336%
+Starting source stepping with srcstepmethod=1
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source Step = 99.7576%
+Source Step = 99.0592%
+Source Step = 99.0888%
+Source Step = 99.1184%
+Source Step = 99.148%
+Source Step = 99.1776%
+Source Step = 99.2071%
+Source stepping failed
+
+Pseudo transient terminated at 101.391 s, solution accepted ready or not!
+Ignoring empty pin current: Ix(u1:fb)
+Ignoring empty pin current: Ix(u1:fb)
+
+Date: Sun Aug 09 12:07:19 2020
+Total elapsed time: 28.668 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 1813250
-traniter = 1813203
-tranpoints = 573771
-accept = 422643
-rejected = 151129
-matrix size = 138
-fillins = 104
+totiter = 68616
+traniter = 2942
+tranpoints = 730
+accept = 550
+rejected = 244
+matrix size = 275
+fillins = 421
 solver = Normal
-Thread vector: 16.7/13.1[2] 6.6/5.0[2] 9.2/5.0[2] 1.7/1.8[1]  2592/500
-Matrix Compiler1: 12.15 KB object code size  3.4/1.9/[1.1]
-Matrix Compiler2: 11.44 KB object code size  1.5/2.6/[0.7]
+Thread vector: 20.7/12.9[6] 7.0/4.4[6] 12.0/4.9[6] 1.1/2.1[1]  2592/500
+Matrix Compiler1: 41.11 KB object code size  8.3/4.7/[2.9]
+Matrix Compiler2: 28.14 KB object code size  4.7/6.4/[1.6]
 

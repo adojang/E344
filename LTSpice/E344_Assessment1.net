@@ -2,27 +2,38 @@
 V2 N005 N004 PWL file=PWLinput.csv
 V3 Stimulus N005 SINE({sineOffset} {sineAmplitude} {sineFreq})
 V1 N004 0 {dcAmplitude}
-V4 N006 0 9
-R_Sense 9V N006 0.010
-R1 NC_01 N002 100
-R2 N002 Stimulus 5
-R3 0 N002 5
-XU1 N001 0 9V 0 N003 0 LM2595_ADJ_TRANS
-C2 0 9V 220µ
-L1 Vout N003 100µ
-C1 Vout 0 120µ
-D1 0 N003 DN5822
-R4 N001 0 1k
-R5 Vout N001 3065
-C3 Vout N001 3.3n
-C4 N007 0 0.33µ
-C5 N008 0 0.1µ
-XU2 N008 0 N007 LM7805
-R6 N008 0 785
-R7 Vout 0 100
+V4 N007 0 9
+R_Sense 9V N007 0.010
+R1 NC_01 N001 100
+R2 N001 N003 5
+R3 0 N001 5
+XU1 N012 0 N013 0 N014 0 LM2595_ADJ_TRANS
+C2 0 N013 220µ
+L1 N011 N014 100µ
+C1 N011 0 120µ
+D1 0 N014 DN5822
+R4 N012 0 1k
+R5 N011 N012 3065
+C3 N011 N012 3.3n
+Rcurrentout N011 0 50
+Rcurrentin N013 NC_02 1
+XU2 N002 0 5V LM7805
+C4 9V 0 0.33µ
+C5 5V 0 0.1µ
+Rcurrentin1 N002 9V 1
+XU3 N009 N006 5V 0 Vout TLC2272
+R6 N006 N008 10k
+R7 N009 N010 10k
+R8 Vout N006 416k
+R9 N009 0 416k
+Rcurrentout1 NC_03 0 50
+R10 N010 5V 238.0641k
+R12 0 N010 100k
+V5 N008 0 SINE(1.21 60m 200)
+C6 N010 0 100n
 .model D D
 .lib C:\Users\Adojang\Documents\LTspiceXVII\lib\cmp\standard.dio
-.tran 0 {transtop} 0 {timestep}
+.tran 0 10m 0 {timestep}
 .include E344cfg.txt
 * Don't change these -- used for auto-assessments.\nYou may modify input files while developing.\nFor submission: \n  * Use only 9V supply \n  * Connect "Stimulus" to your input\n  * Connect "Vout" to your output.\n  * Only one label name per net.
 * Config file:
@@ -30,12 +41,14 @@ R7 Vout 0 100
 * Battery
 * Sensor-\nemulating \nstimulus
 * Assessed nets:\nConnect to your outputs
-* E. Stewdent.,  00024601\nV(0degV) = 500 mV\ndeltaV/degV = 10 mV
+* AJ van Wijk  21786275\nV(0degV) =  640mV\ndeltaV/degV = 15 mV
 .incl LM2595_ADJ_TRANS.LIB
 .incl LM7805.lib
 .incl TLC2272.lib
 .incl TL081.lib
 .incl 1N5822.lib
+;tran 0 {transtop} 0 {timestep}
+* MAX is 1.27V\nVariation is 60mV
 .lib C:\Users\Adojang\Desktop\E344\LTSpice\LM2595_ADJ_TRANS.LIB
 .lib C:\Users\Adojang\Desktop\E344\LTSpice\LM7805.lib
 .backanno
