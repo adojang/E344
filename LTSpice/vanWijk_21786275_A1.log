@@ -221,25 +221,23 @@ Source Step = 99.9822%
 Source Step = 100%
 Source stepping failed
 
-Pseudo transient terminated at 102.703 s, solution accepted ready or not!
-Heightened Def Con from 0.0541292 to 0.0541292
-Heightened Def Con from 0.0941297 +to 0.0941297
+Pseudo transient terminated at 102.613 s, solution accepted ready or not!
 
-Date: Fri Aug 14 15:57:34 2020
-Total elapsed time: 25.379 seconds.
+Date: Sun Aug 16 09:21:25 2020
+Total elapsed time: 25.025 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 49593
-traniter = 13711
-tranpoints = 5870
-accept = 5620
-rejected = 316
+totiter = 48496
+traniter = 12596
+tranpoints = 5664
+accept = 5484
+rejected = 243
 matrix size = 300
 fillins = 723
 solver = Normal
-Thread vector: 21.7/10.2[7] 8.6/4.2[7] 14.4/5.4[7] 2.1/6.8[1]  2592/500
-Matrix Compiler1: 73.05 KB object code size  23.9/14.0/[7.0]
-Matrix Compiler2: 37.81 KB object code size  9.1/11.0/[4.5]
+Thread vector: 20.8/10.2[7] 15.2/4.5[7] 27.0/9.5[7] 2.3/7.1[1]  2592/500
+Matrix Compiler1: 73.05 KB object code size  25.3/13.4/[5.7]
+Matrix Compiler2: 37.81 KB object code size  14.3/19.0/[3.1]
 

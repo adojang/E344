@@ -1,0 +1,48 @@
+* C:\Users\Adojang\Desktop\E344\LTSpice\vanWijk_21786275_A1.ASC
+V2 N002 N001 PWL file=PWLinput.csv
+V3 Stimulus N002 SINE({sineOffset} {sineAmplitude} {sineFreq})
+V1 N001 0 {dcAmplitude}
+V4 N004 0 9
+R_Sense 9V N004 0.010
+XU2 N009 0 5V LM7805
+C4 9V 0 0.33µ
+C5 5V 0 0.1µ
+Rcurrentin1 N009 9V 1
+XU3 N005 N003 5V 0 LPF TLC2272
+R6 N003 PreAmp 13k
+R7 N005 N006 10k
+R8 LPF N003 416k
+R9 N005 0 416k
+R10 N006 5V 236.0641k
+R12 0 N006 100k
+R18 Vout LPF 120k
+R14 N007 Stimulus 100k
+R15 PreAmp N007 100k
+R21 N010 5V 313k
+R22 0 N010 100k
+XU4 N008 N007 5V 0 PreAmp TLC2272
+R19 N008 N010 10k
+C9 Vout 0 331n
+.tran 0 {transtop} 0 {timestep}
+.include E344cfg.txt
+* Don't change these -- used for auto-assessments.\nYou may modify input files while developing.\nFor submission: \n  * Use only 9V supply \n  * Connect "Stimulus" to your input\n  * Connect "Vout" to your output.\n  * Only one label name per net.
+* Config file:
+* Analysis setup:
+* Battery
+* Sensor-\nemulating \nstimulus
+* Assessed nets:\nConnect to your outputs
+* AJ van Wijk  21786275\nV(0degV) =  640mV\ndeltaV/degV = 15 mV
+.incl LM2595_ADJ_TRANS.LIB
+.incl LM7805.lib
+.incl TLC2272.lib
+.incl TL081.lib
+.incl 1N5822.lib
+;tran 0 {transtop} 0 {timestep}
+* MAX is 1.27V\nVariation is 60mV
+* LPF with fc = 4Hz
+* PreAmplifier
+* 9V to 5V Power supply
+* DiffAmp with virtual GND
+.lib C:\Users\Adojang\Desktop\E344\LTSpice\LM7805.lib
+.backanno
+.end
