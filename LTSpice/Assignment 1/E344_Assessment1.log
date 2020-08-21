@@ -1,0 +1,171 @@
+Circuit: * C:\Users\Adojang\Desktop\E344\LTSpice\E344_Assessment1.asc
+
+Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}}&v(b)>{{vthresh}},{{vdd}},{{vss}})}"
+    Error: undefined symbol in: "if([v](a)>((vthresh))&v(b)>((vthresh)),((vdd)),((vss)))"
+Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}}|v(b)>{{vthresh}}|v(c)>{{vthresh}},{{vdd}},{{vss}})}"
+    Error: undefined symbol in: "if([v](a)>((vthresh))|v(b)>((vthresh))|v(c)>((vthresh)),((vdd)),((vss)))"
+Questionable use of curly braces in "b§e_abmgate yint 0 v={if(v(a)>{{vthresh}},{{vdd}},{{vss}})}"
+    Error: undefined symbol in: "if([v](a)>((vthresh)),((vdd)),((vss)))"
+WARNING: Node N002 is floating.
+WARNING: Node NC_04 is floating.
+
+WARNING: Less than two connections to node STIMULUS.  This node is used by V3.
+WARNING: Less than two connections to node NC_01.  This node is used by R1.
+WARNING: Less than two connections to node N002.  This node is used by R2.
+WARNING: Less than two connections to node NC_02.  This node is used by R3.
+WARNING: Less than two connections to node NC_03.  This node is used by RCURRENTIN.
+WARNING: Less than two connections to node NC_04.  This node is used by R13.
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+Gmin = 0.180144
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+Gmin = 0.111591
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 0.109439
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 6.07244%
+Source Step = 6.10204%
+Source Step = 6.13163%
+Source Step = 6.16122%
+Source Step = 6.19081%
+Source Step = 6.22041%
+vernier = 0.00146484
+Source Step = 6.26332%
+Source Step = 6.30771%
+Source Step = 6.3521%
+Source Step = 6.39648%
+Source Step = 6.44087%
+vernier = 0.00219727
+Source Step = 6.50302%
+Source Step = 6.5696%
+Source Step = 6.63619%
+Source Step = 6.70277%
+Source Step = 6.76935%
+vernier = 0.0032959
+Source Step = 6.85924%
+Source Step = 6.95912%
+Source Step = 7.05899%
+Source Step = 7.15887%
+Source Step = 7.25874%
+vernier = 0.00494385
+Source Step = 7.38858%
+Source Step = 7.5384%
+Source Step = 7.68821%
+Source Step = 7.83802%
+Source Step = 7.98784%
+vernier = 0.00741577
+Source Step = 8.1751%
+Source Step = 8.39982%
+Source Step = 8.62455%
+Source Step = 8.84927%
+Source Step = 9.07399%
+vernier = 0.0111237
+Source Step = 9.34365%
+Source Step = 9.68073%
+Source Step = 10.0178%
+Source Step = 10.3549%
+Source Step = 10.692%
+vernier = 0.0166855
+Source Step = 11.0796%
+Source Step = 11.5852%
+Source Step = 12.0909%
+Source Step = 12.5965%
+Source Step = 13.1021%
+vernier = 0.0250282
+Source Step = 13.6583%
+Source Step = 14.4167%
+Source Step = 15.1751%
+Source Step = 15.9336%
+Source Step = 16.692%
+vernier = 0.0375423
+Source Step = 17.4884%
+Source Step = 18.626%
+Source Step = 19.7637%
+Source Step = 20.9013%
+Source Step = 22.0389%
+Source Step = 23.1766%
+vernier = 0.0563135
+Source Step = 24.8831%
+Source Step = 26.5895%
+Source Step = 28.296%
+Source Step = 30.0025%
+Source Step = 31.7089%
+vernier = 0.0844703
+Source Step = 34.1833%
+Source Step = 36.743%
+Source Step = 39.3027%
+Source Step = 41.8624%
+Source Step = 44.4221%
+vernier = 0.126705
+Source Step = 48.0057%
+Source Step = 51.8453%
+Source Step = 55.6848%
+Source Step = 59.5244%
+Source Step = 63.364%
+vernier = 0.190058
+Source Step = 68.5474%
+Source Step = 74.3067%
+Source Step = 80.066%
+Source Step = 85.8254%
+Source Step = 91.5847%
+vernier = 0.0475145
+Source Step = 91.0808%
+Source Step = 91.1708%
+Source Step = 91.2608%
+Source Step = 91.3507%
+Source Step = 91.4407%
+Source Step = 91.5307%
+Source Step = 91.6207%
+Source Step = 91.7107%
+Source Step = 91.8007%
+Source Step = 91.8907%
+Source Step = 91.9807%
+Source Step = 92.0707%
+Source Step = 92.1606%
+Source Step = 92.2506%
+Source Step = 92.3406%
+Starting source stepping with srcstepmethod=1
+Source Step = 3.0303%
+Source Step = 23.4848%
+Source Step = 25.7102%
+vernier = 0.00390625
+Source stepping failed
+
+Pseudo transient terminated at 102.419 s, solution accepted ready or not!
+Ignoring empty pin current: Ix(u1:fb)
+Ignoring empty pin current: Ix(u1:fb)
+
+Date: Fri Aug 14 15:45:28 2020
+Total elapsed time: 21.044 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 32677
+traniter = 10896
+tranpoints = 5432
+accept = 5335
+rejected = 133
+matrix size = 433
+fillins = 1215
+solver = Normal
+Thread vector: 36.8/24.3[8] 14.8/5.9[8] 26.3/6.9[8] 1.8/4.2[1]  2592/500
+Matrix Compiler1: 118.60 KB object code size  40.5/21.5/[8.7]
+Matrix Compiler2: 55.18 KB object code size  13.9/12.9/[5.5]
+
