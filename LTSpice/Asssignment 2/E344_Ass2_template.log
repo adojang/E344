@@ -1,0 +1,108 @@
+Circuit: * C:\Users\Adojang\Desktop\E344\LTSpice\Asssignment 2\E344_Ass2_template.asc
+
+WARNING: Less than two connections to node N001.  This node is used by R2.
+WARNING: Less than two connections to node N009.  This node is used by A1.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 0.00100083
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195313
+Gmin = 0.00100083
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 5.68182%
+Source Step = 7.57576%
+Source Step = 9.4697%
+Source Step = 11.3636%
+Source Step = 13.2576%
+vernier = 0.09375
+Source Step = 15.2462%
+Source Step = 18.0871%
+Source Step = 20.928%
+Source Step = 23.7689%
+Source Step = 26.6098%
+Source Step = 29.4508%
+vernier = 0.140625
+Source Step = 33.7121%
+Source Step = 37.9735%
+Source Step = 42.2348%
+Source Step = 46.4962%
+Source Step = 50.7576%
+vernier = 0.210938
+Source Step = 55.8179%
+Source Step = 56.2973%
+Source Step = 56.6969%
+Source Step = 57.0964%
+Source Step = 57.4959%
+Source Step = 57.8954%
+vernier = 0.0197754
+Source Step = 58.4347%
+Source Step = 59.0339%
+Source Step = 59.6332%
+Source Step = 60.2325%
+Source Step = 60.8317%
+vernier = 0.0296631
+Source Step = 61.6107%
+Source Step = 62.5096%
+Source Step = 63.4085%
+Source Step = 64.3074%
+Source Step = 65.2063%
+vernier = 0.0444946
+Source Step = 66.3299%
+Source Step = 67.6782%
+Source Step = 69.0265%
+Source Step = 70.3748%
+Source Step = 71.7232%
+vernier = 0.0667419
+Source Step = 73.3411%
+Source Step = 75.3636%
+Source Step = 77.3861%
+Source Step = 79.4086%
+Source Step = 81.4311%
+vernier = 0.100113
+Source Step = 83.7569%
+Source Step = 86.7907%
+Source Step = 89.8244%
+Source Step = 92.8581%
+Source Step = 95.8918%
+vernier = 0.150169
+Source Step = 99.2289%
+Source stepping succeeded in finding the operating point.
+
+
+Date: Mon Aug 24 13:52:57 2020
+Total elapsed time: 11.593 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 451302
+traniter = 447175
+tranpoints = 133084
+accept = 110579
+rejected = 22505
+matrix size = 174
+fillins = 342
+solver = Normal
+Thread vector: 17.7/10.3[4] 7.9/4.3[4] 10.2/4.6[4] 1.9/2.6[1]  2592/500
+Matrix Compiler1: 33.86 KB object code size  10.0/5.7/[2.7]
+Matrix Compiler2: 20.46 KB object code size  5.0/4.3/[1.7]
+
