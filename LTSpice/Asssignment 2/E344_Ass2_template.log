@@ -1,8 +1,8 @@
 Circuit: * C:\Users\Adojang\Desktop\E344\LTSpice\Asssignment 2\E344_Ass2_template.asc
 
 WARNING: Less than two connections to node NC_01.  This node is used by R1.
-WARNING: Less than two connections to node N001.  This node is used by R2.
-WARNING: Less than two connections to node N002.  This node is used by R4.
+WARNING: Less than two connections to node N002.  This node is used by R2.
+WARNING: Less than two connections to node N003.  This node is used by R4.
 Early termination of direct N-R iteration.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
@@ -10,17 +10,17 @@ Gmin = 10
 vernier = 0.5
 vernier = 0.25
 vernier = 0.125
-Gmin = 6.68666
+Gmin = 5.5165
 vernier = 0.0625
 vernier = 0.03125
 vernier = 0.015625
 vernier = 0.0078125
-Gmin = 6.72377
+Gmin = 5.49501
 vernier = 0.00390625
 vernier = 0.00195313
 vernier = 0.000976563
 vernier = 0.000488281
-Gmin = 6.72131
+Gmin = 5.50104
 Gmin = 0
 Gmin stepping failed
 
@@ -37,22 +37,72 @@ Source Step = 86.7424%
 Source Step = 98.1061%
 Source stepping succeeded in finding the operating point.
 
+Heightened Def Con from 0.8855 to 0.8855
+Heightened Def Con from 0.885974 to 0.885974
+Heightened Def Con from 0.886007 to 0.886007
+Heightened Def Con from 1.28505 to 1.28505
+Heightened Def Con from 2.08105 to 2.08105
+Heightened Def Con from 2.4801 to 2.4801
+Heightened Def Con from 4.0795 to 4.0795
+Heightened Def Con from 4.4801 to 4.4801
+Heightened Def Con from 4.88378 to 4.88378
+Heightened Def Con from 4.88386 to 4.88386
+Heightened Def Con from 5.6841 to 5.6841
+Heightened Def Con from 6.08166 to 6.08166
+Heightened Def Con from 6.87766 to 6.87766
+Heightened Def Con from 7.27907 to 7.27907
+Heightened Def Con from 8.47783 to 8.47783
+Heightened Def Con from 9.28207 to 9.28207
+Heightened Def Con from 9.68908 to 9.68908
+Heightened Def Con from 10.0787 to 10.0787
+Heightened Def Con from 11.2764 to 11.2764
+Heightened Def Con from 11.6778 to 11.6778
+Heightened Def Con from 12.0728 to 12.0728
+Heightened Def Con from 13.2785 to 13.2785
+Heightened Def Con from 14.0785 to 14.0785
+Heightened Def Con from 14.0788 to 14.0788
+Heightened Def Con from 14.4844 to 14.4844
+Heightened Def Con from 16.0727 to 16.0727
+Heightened Def Con from 16.8855 to 16.8855
+Heightened Def Con from 18.4785 to 18.4785
+Heightened Def Con from 18.8745 to 18.8745
+Heightened Def Con from 18.8745 to 18.8745
+Heightened Def Con from 19.2781 to 19.2781
+Heightened Def Con from 19.6745 to 19.6745
+Heightened Def Con from 19.6748 to 19.6748
+Heightened Def Con from 20.0767 to 20.0767
+Heightened Def Con from 20.4801 to 20.4801
+Heightened Def Con from 21.2815 to 21.2815
+Heightened Def Con from 21.2819 to 21.2819
+Heightened Def Con from 21.282 to 21.282
+Heightened Def Con from 21.6815 to 21.6815
+Heightened Def Con from 22.0821 to 22.0821
+Heightened Def Con from 22.8735 to 22.8735
+Heightened Def Con from 23.2769 to 23.2769
+Heightened Def Con from 23.6755 to 23.6755
+Heightened Def Con from 24.8793 to 24.8793
+Heightened Def Con from 25.6828 to 25.6828
+Heightened Def Con from 26.0809 to 26.0809
+Heightened Def Con from 28.0741 to 28.0741
+Heightened Def Con from 28.8849 to 28.8849
+Heightened Def Con from 29.2892 to 29.2892
+Heightened Def Con from 29.6815 to 29.6815
 
-Date: Fri Aug 28 18:03:17 2020
-Total elapsed time: 5.002 seconds.
+Date: Wed Sep 02 10:49:59 2020
+Total elapsed time: 6.161 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 126884
-traniter = 124789
-tranpoints = 56500
-accept = 55277
-rejected = 1223
-matrix size = 114
-fillins = 862
+totiter = 198569
+traniter = 196401
+tranpoints = 73984
+accept = 67615
+rejected = 6419
+matrix size = 100
+fillins = 530
 solver = Normal
-Thread vector: 10.6/7.9[2] 12.9/9.6[2] 6.2/4.5[2] 0.9/1.8[1]  2592/500
-Matrix Compiler1: 121.17 KB object code size  30.9/26.5/[7.7]
-Matrix Compiler2: 24.46 KB object code size  3.1/2.9/[1.1]
+Thread vector: 14.6/10.2[2] 5.2/4.3[2] 7.0/5.5[2] 0.7/2.7[1]  2592/500
+Matrix Compiler1: 62.30 KB object code size  12.1/5.9/[2.9]
+Matrix Compiler2: 17.66 KB object code size  3.0/3.3/[0.9]
 
