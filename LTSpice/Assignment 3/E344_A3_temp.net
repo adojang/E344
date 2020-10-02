@@ -1,0 +1,46 @@
+* C:\Users\Adojang\Desktop\E344\LTSpice\Assignment 3\E344_A3_temp.asc
+V1 Vtempsensor 0 PWL file=TempSensorPWL.csv
+V4 N009 0 9
+R_Sense 9V N009 0.010
+XU1 9V 0 5V LM7805
+XU2 N002 Vtempoutadc N001 N003 Vtempoutadc TLC2272 TLC2272
+XU3 N002 N004 N005 N006 N004 TL081 TL081
+R1 N007 PreAmp 13k
+R2 N012 N014 10k
+R3 LPF N007 416k
+R4 N012 0 416k
+R5 N014 5V 236.0641k
+R6 0 N014 100k
+R7 Vout LPF 120k
+R8 N008 N010 100k
+R9 PreAmp N008 100k
+R10 N013 5V 313k
+R11 0 N013 100k
+R12 N011 N013 10k
+C3 Vout 0 331n
+C4 9V 0 0.33µ
+C5 5V 0 0.1µ
+XU4 N011 N008 5V 0 PreAmp TLC2272 TLC2272
+XU5 N012 N007 5V 0 LPF TLC2272 TLC2272
+.tran 0 {transtop} 0 {timestep}
+.include A3tempcfg.txt
+* Don't change these -- used for auto-assessments.\nYou may modify input files while developing.\nFor submission: \n  * Use only 9V supply \n  * Connect "Vtempsensor" to your \n               conditioning circuit's input\n  * Connect "VtempoutADC" to your output signal.\n  * Only one label name per net.
+* Config file:
+* Analysis setup:
+* Battery
+* Sensor-\nemulating \nstimulus
+* =============================\nREPLACE WITH YOUR DETAILS\nAJ van Wijk,  21786275\nVtempsensor for 0degC = 640 mV\ndelta Vtempsensor = 15 mV/degC\n=============================
+* ==========================================================================================\nTemperature conditioning circuit (only copy and paste the given op-amps, or use those given in the working directory only)\n==========================================================================================
+* =============================\nVoltage regulation (complete this)\n=============================
+.incl TLC2272.LIB
+.incl TL081.LIB
+.incl LM78XX_RS.lib
+* Connect to your conditioning circuit's output
+* =============================\nIncludes (don't fiddle with this!!)\n=============================
+* =======================================\nYour circuit goes here, these are just placeholders.\n=======================================
+* LPF with fc = 4Hz
+* PreAmplifier
+* DiffAmp with virtual GND
+.lib LM78XX_RS.lib
+.backanno
+.end

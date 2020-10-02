@@ -1,4 +1,21 @@
 Circuit: * C:\Users\Adojang\Desktop\E344\LTSpice\Asssignment 2\Draft1.asc
 
-Fatal Error: Unknown subcircuit called in:
-   xu1 n006 n001 n003 0 n002 tlc2272
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri Sep 25 11:47:25 2020
+Total elapsed time: 0.170 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 13399
+traniter = 13396
+tranpoints = 4709
+accept = 4108
+rejected = 601
+matrix size = 6
+fillins = 0
+solver = Normal
+Matrix Compiler1: 128 bytes object code size  0.0/0.1/[0.0]
+Matrix Compiler2: 306 bytes object code size  0.0/0.0/[0.0]
+
