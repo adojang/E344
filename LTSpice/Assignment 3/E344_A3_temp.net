@@ -1,27 +1,25 @@
 * C:\Users\Adojang\Desktop\E344\LTSpice\Assignment 3\E344_A3_temp.asc
 V1 Vtempsensor 0 PWL file=TempSensorPWL.csv
-V4 N009 0 9
-R_Sense 9V N009 0.010
+V4 N003 0 9
+R_Sense 9V N003 0.010
 XU1 9V 0 5V LM7805
-XU2 N002 Vtempoutadc N001 N003 Vtempoutadc TLC2272 TLC2272
-XU3 N002 N004 N005 N006 N004 TL081 TL081
-R1 N007 PreAmp 13k
-R2 N012 N014 10k
-R3 LPF N007 416k
-R4 N012 0 416k
-R5 N014 5V 236.0641k
-R6 0 N014 100k
-R7 Vout LPF 120k
-R8 N008 N010 100k
-R9 PreAmp N008 100k
-R10 N013 5V 313k
-R11 0 N013 100k
-R12 N011 N013 10k
-C3 Vout 0 331n
+R1 N001 PreAmp 13k
+R2 N005 N007 10k
+R3 LPF N001 416k
+R4 N005 0 416k
+R5 N007 5V 236.0641k
+R6 0 N007 100k
+R7 Vtempoutadc LPF 120k
+R8 N002 Vtempsensor 100k
+R9 PreAmp N002 100k
+R10 N006 5V 313k
+R11 0 N006 100k
+R12 N004 N006 10k
+C3 Vtempoutadc 0 331n
 C4 9V 0 0.33µ
 C5 5V 0 0.1µ
-XU4 N011 N008 5V 0 PreAmp TLC2272 TLC2272
-XU5 N012 N007 5V 0 LPF TLC2272 TLC2272
+XU4 N004 N002 5V 0 PreAmp TLC2272 TLC2272
+XU5 N005 N001 5V 0 LPF TLC2272 TLC2272
 .tran 0 {transtop} 0 {timestep}
 .include A3tempcfg.txt
 * Don't change these -- used for auto-assessments.\nYou may modify input files while developing.\nFor submission: \n  * Use only 9V supply \n  * Connect "Vtempsensor" to your \n               conditioning circuit's input\n  * Connect "VtempoutADC" to your output signal.\n  * Only one label name per net.

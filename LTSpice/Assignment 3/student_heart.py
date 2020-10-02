@@ -6,8 +6,15 @@ def calibrate(time, amplitude):
     # Enter calibration code here:
     ######################################
         
-    bpm = amplitude[0] # This line will is to be replaced with your calibration code.
-         
+    samples = 2000
+
+    for x in range (0, samples)
+    	if amplitude[0] > 2.5
+    		liquid = 1
+
+
+
+    bpm = amplitude[0]
         
         
         
